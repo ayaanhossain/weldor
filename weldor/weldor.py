@@ -50,7 +50,7 @@ lossmessg = (
 def get_dict(filepath):
     '''
     Extract all words from dictionary
-    located at
+    located at filepath.
 
     :: filepath
        type - string
