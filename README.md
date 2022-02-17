@@ -110,7 +110,7 @@ Since its release Wordle has garnered the attention of everyone everywhere. Vari
 
 * [Quordle](https://www.quordle.com/). Similar to Dordle, but you gotta guess 4 words with a single proposal. So, you'd need 4× `weldor` sessions.
 
-* [Word Master](https://octokatherine.github.io/word-master/) and [hello wordl](https://hellowordl.net/). Unlimited Wordle clones. The hello wordl variant allows the use of different length words, which means you'll need to modify the dictionaries `weldor` uses under the hood (see next section) in order to use letters of those lengths. Check [this repo](https://github.com/dwyl/english-words) to obtain a collection of 466,000+ English words of various length. You'll need to write your own code to filter for words of a certain length.
+* [Word Master](https://octokatherine.github.io/word-master/) and [hello wordl](https://hellowordl.net/). Unlimited Wordle clones. The hello wordl variant allows the use of different length words, which means you'll need to modify the dictionaries `weldor` uses under the hood (see next section). Check [this repo](https://github.com/dwyl/english-words) to obtain a collection of 466,000+ English words of various length. You'll need to write your own code to filter for words of a certain length.
 
 * [Lewdle](https://www.lewdlegame.com/). Like Wordle, but with lewd words. I know where to find the dictionary, but I don't think I need `weldor` for this variant.
 
