@@ -138,7 +138,7 @@ The `shell.txt` file stores all guesses that are valid, but not really the answe
 
 If your variant does not have separated concepts of `shell` and `index`, then put your word list as an `index.txt`, and leave the `shell.txt` blank.
 
-Please also feel free to change the logic in `propose_words(...)` function inside `weldor.py` (anything else for that matter) to suit your needs as well as modify the `wordbaseset` variable to include your alphabets. If you come up with some cool modification to `weldor`, I'd love to hear about it ([open an issue](https://github.com/ayaanhossain/weldor/issues), maybe?).
+Please also feel free to change the logic in `propose_words(...)` function inside `weldor.py` (or anything else for that matter) to suit your needs as well as modify the `wordbaseset` variable to include your alphabets. If you come up with some cool modification to `weldor`, I'd love to hear about it ([open an issue](https://github.com/ayaanhossain/weldor/issues), maybe?).
 
 Once you've modified `weldor`, simply use
 ```bash
