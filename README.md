@@ -13,9 +13,7 @@
 </p>
 
 
-`weldor` is a simple reactive AI designed to assist you in playing [Wordle](https://www.powerlanguage.co.uk/wordle/) and [some of its derivatives](https://www.cnet.com/tech/gaming/wordle-spinoffs-other-word-games-to-try-if-you-cant-get-enough/). Rather than just giving you [a single answer with the highest entropy](https://www.nme.com/news/gaming-news/wordle-fan-uses-maths-to-find-the-statistically-best-word-to-try-first-3156632) at each step, `weldor` combines [a classic combinatorics concept](https://en.wikipedia.org/wiki/Set_cover_problem) to give you multiple choices for your turns. By reducing Wordle variants to a game of deduction that still allows for gambling, rather than memorization or recall, `weldor` allows a (human) player to both enjoy and win these games in a few rounds. You can also [change the dictionary](#Modifying-weldor) used by `weldor` for other variants. Give `weldor` a shot!
-
-<p style="text-align:center">Try `weldor` [live on repl.it](https://replit.com/@bioalgorithmist/weldor#.replit).</p>
+`weldor` is a simple reactive AI designed to assist you in playing [Wordle](https://www.powerlanguage.co.uk/wordle/) and [some of its derivatives](https://www.cnet.com/tech/gaming/wordle-spinoffs-other-word-games-to-try-if-you-cant-get-enough/). Rather than just giving you [a single answer with the highest entropy](https://www.nme.com/news/gaming-news/wordle-fan-uses-maths-to-find-the-statistically-best-word-to-try-first-3156632) at each step, `weldor` combines [a classic combinatorics concept](https://en.wikipedia.org/wiki/Set_cover_problem) to give you multiple choices for your turns. By reducing Wordle variants to a game of deduction that still allows for gambling, rather than memorization or recall, `weldor` allows a (human) player to both enjoy and win these games in a few rounds. You can also [change the dictionary](#Modifying-weldor) used by `weldor` for other variants. You can try `weldor` [live on repl.it](https://replit.com/@bioalgorithmist/weldor#.replit).
 
 
 ## `weldor` in Action!
