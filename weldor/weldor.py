@@ -279,7 +279,7 @@ def get_entropy_heap(index, space):
     # Return result
     return entropy_heap
 
-def extract_proposal(entropy_heap):
+def extract_proposals(entropy_heap):
     '''
     Extract top 5 words from entropy
     max heap for user.
@@ -303,7 +303,7 @@ def extract_proposal(entropy_heap):
         # Define result tuple
         r = (j,h,'bits')
 
-        # We already have some proposa
+        # We already have some proposals
         if proposal:
 
             # We have an equal entropy
@@ -339,7 +339,7 @@ def extract_proposal(entropy_heap):
 def get_proposal_coverage(index, proposal):
     '''
     Compute the differential coverage
-    dictionary of proposa list.
+    dictionary of proposal list.
 
     :: index
        type - list
@@ -502,7 +502,7 @@ def propose_words(index, space):
         space=space)
 
     # Extract proposal
-    proposal = extract_proposal(
+    proposal = extract_proposals(
         entropy_heap=entropy_heap)
 
     # Compute proposal coverage

@@ -21,26 +21,26 @@
 ```python
  $ weldor              # type in "weldor" in your terminal and press ENTER to start
 
- weldor v2.6.2022      # program and version
+ weldor v2.7.2022      # program and version
  by ah                 # author
 
  guile (played)        # let's say you played "guile"
  ---*+                 # (feedback must have silvers as "-", greens as "*" and yellows as "+")
- newly (secret)        # "---*+" is then the encoded feedback if the secret word was "newly" (true?)
+ newly (secret)        # "---*+" is then the encoded feedback if the secret was "newly" (true?)
 
  enter word: no idea   # weldor asks you to enter a word, but you say "no idea"
 
   try these?           # weldor then searches the space and proposes the following words
    - shirt (15 hcov)   #
-   - first (15 hcov)   # the words and their information score
-   - skirt (15 hcov)   # is presented in sorted order for your
+   - first (15 hcov)   # the words and their information scores
+   - skirt (15 hcov)   # are presented in sorted order for your
    - wrist (15 hcov)   # evaluation
    - strip (15 hcov)   #
    - arise (5.82 bits) # words selected based on high entropy are scored in bits and help
    - trace (5.83 bits) # in quickly eliminating large sections of the search space,
    - irate (5.83 bits) # while cover words are scored by differential alphabet coverage
    - crate (5.83 bits) #
-   - slate (5.86 bits) # but ultimately these are suggestions,
+   - slate (5.86 bits) # however, these are only suggestions,
    - raise (5.88 bits) # and you're free to ignore them
 
  enter word: grate     # instead of choosing "irate" or "crate" you play "grate" (the defiance!)
@@ -49,8 +49,8 @@
   try these?           # analyzing the outcome, weldor suggests the following
    - solid (19 hcov)   #
    - spoil (5.39 bits) # words with cover scores (scov and hcov) are selected to eliminate
-   - slick (5.39 bits) # as many high entropy words as possible (tie-breaker); hcov words are
-   - noisy (5.40 bits) # hard-mode compliant, but scov words may not be so
+   - slick (5.39 bits) # as many high entropy words as possible (tie-breaker); hcov words
+   - noisy (5.40 bits) # are hard-mode compliant, but scov words may not be so
    - could (5.42 bits) #
    - lousy (5.42 bits) # you can opt to play a cover word with high value when the high
    - slimy (5.42 bits) # entropy words are very similar to each other in composition
@@ -71,15 +71,15 @@
    feedback: -+*-+     # and enter the feedback from Wordle
 
   try this!!           # and et voila!
-   - knoll (0.00 bits) # that just leaves with one word for you to try and win this
-   - pogchamp!         # (but maybe you'd have won in the earlier attempt with knoll..)
+   - knoll (0.00 bits) # that just leaves you with one word to try and win this
+   - pogchamp!         # (but maybe you could have won earlier with knoll..)
 
  weldor out!           # so long, weldor
 ```
 
 ## Installation
 
-`weldor` is pure-python, but requires `Python 3.6` or above. Although it was developed and tested using Ubuntu Linux on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about), it should also be compatible with macOS.
+`weldor` is pure-python, and requires `Python 3.6` or above. It was developed and tested using Ubuntu Linux on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about) but it should also be compatible with macOS.
 
 > Note: there may be some issues related to the GNU `readline` library on macOS which `weldor` needs to enable the use of `←`, `↑`, `→` and `↓` keys for selecting the words from suggested lists.
 
@@ -110,11 +110,11 @@ Since its release Wordle has garnered the attention of everyone everywhere. Vari
 
 * [Quordle](https://www.quordle.com/). Similar to Dordle, but you gotta guess 4 words with a single proposal. So, you'd need 4× `weldor` sessions.
 
-* [Word Master](https://octokatherine.github.io/word-master/) and [hello wordl](https://hellowordl.net/). Unlimited Wordle clones. The hello wordl variant allows to use different length words, which means you'll need to modify the dictionaries `weldor` uses under the hood (see next section) in order to use letters of those lengths. Check [this repo](https://github.com/dwyl/english-words) to obtain a collection of 466,000+ English words of various length. You'll need to write your own code to filter for words of a certain length.
+* [Word Master](https://octokatherine.github.io/word-master/) and [hello wordl](https://hellowordl.net/). Unlimited Wordle clones. The hello wordl variant allows the use of different length words, which means you'll need to modify the dictionaries `weldor` uses under the hood (see next section) in order to use letters of those lengths. Check [this repo](https://github.com/dwyl/english-words) to obtain a collection of 466,000+ English words of various length. You'll need to write your own code to filter for words of a certain length.
 
-* [Lewdle](https://www.lewdlegame.com/). Like Wordle, but with lewd words. I do not know where to find the dictionary, but I don't think I need `weldor` for this variant.
+* [Lewdle](https://www.lewdlegame.com/). Like Wordle, but with lewd words. I know where to find the dictionary, but I don't think I need `weldor` for this variant.
 
-* [A host of topical clones](https://github.com/cwackerfuss/react-wordle). There are so many custom Wordle variants that use custom dictionaries, beyond just the ones from English language, including [Numble](https://rbrignall.github.io/numble/) and [Nerdle](https://nerdlegame.com/). For Nerdle in particular, one can enumerate all 1,139,062,500 possible equations, evaluate them for mathematical correctness, and then save the filtered ones in a plaintext dictionary. For others, you might have to go through the game's page source or open reddit threads.
+* [A host of topical clones](https://github.com/cwackerfuss/react-wordle). There are so many custom Wordle variants that use custom dictionaries, beyond just the ones from the English language, including [Numble](https://rbrignall.github.io/numble/) and [Nerdle](https://nerdlegame.com/). For Nerdle in particular, one can enumerate all 1,139,062,500 possible equations, evaluate them for mathematical correctness, and then save the filtered ones in a plaintext dictionary. For others, you might have to go through the game's page source or open reddit threads.
 
 
 ## Modifying `weldor`
@@ -138,7 +138,7 @@ The `shell.txt` file stores all guesses that are valid, but not really the answe
 
 If your variant does not have separated concepts of `shell` and `index`, then put your word list as an `index.txt`, and leave the `shell.txt` blank.
 
-Please also free to change the logic in `propose_word(...)` function inside `weldor.py` to suit your needs as well as extend the `wordbaseset` variable to include your alphabets. If you come up with some cool strategy or heuristic to playing Wordle, I'd love to hear about it ([open an issue](https://github.com/ayaanhossain/weldor/issues), maybe?).
+Please also free to change the logic in `propose_words(...)` function inside `weldor.py` (anything else for that matter) to suit your needs as well as modify the `wordbaseset` variable to include your alphabets. If you come up with some cool modification to `weldor`, I'd love to hear about it ([open an issue](https://github.com/ayaanhossain/weldor/issues), maybe?).
 
 Once you've modified `weldor`, simply use
 ```bash
