@@ -17,7 +17,7 @@
 
 <p align="center">
     <a href="https://replit.com/@bioalgorithmist/weldor#.replit">
-        <img src="https://raw.githubusercontent.com/ayaanhossain/repfmt/main/weldor/img/replit.svg"  alt="You can try `weldor` live on repl.it at https://replit.com/@bioalgorithmist/weldor#.replit" width="160" class="center"/>
+        <img src="https://raw.githubusercontent.com/ayaanhossain/repfmt/main/weldor/img/replit.svg"  alt="You can try `weldor` live on repl.it at https://replit.com/@bioalgorithmist/weldor#.replit" width="175" class="center"/>
     </a>
 </p>
 
