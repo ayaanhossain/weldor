@@ -9,7 +9,7 @@ import pkg_resources as pr
 import readline      as rl
 
 
-__version__ = 'v2.7.2022'
+__version__ = 'v2.8.2022'
 
 __author__ = 'ah'
 
@@ -233,7 +233,7 @@ def get_entropy_heap(index, space):
                 q=q)] += 1
 
         # Show some update
-        if i == j:
+        if (i == j) and ((i+1) % 10 == 1):
             messg = f'  analyzing: {q}'
             clean = max(clean, len(messg))
             print(messg, end='\r')

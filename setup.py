@@ -15,7 +15,7 @@ setup(
     name='weldor',
 
     # Link: https://www.python.org/dev/peps/pep-0440/#version-scheme
-    version='v2.7.2022',
+    version='v2.8.2022',
 
     description='weldor - A reactive AI designed to assist you with Wordle variants',
 
